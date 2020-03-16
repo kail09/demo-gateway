@@ -1,14 +1,12 @@
 package com.kail.demoGateWay.v1.zuulFilter;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class ErrorFilter extends ZuulFilter {
-	
-	private final Logger log = LoggerFactory.getLogger(getClass());
 	
 	@Override
 	public String filterType() {
